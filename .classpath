@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-16">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="conectorpostgresql/postgresql-42.2.23.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Diego Timana/Downloads/commons-compress-1.18.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Diego Timana/Downloads/commons-collections-3.2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Diego Timana/Downloads/commons-digester-2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Diego Timana/Downloads/commons-lang-2.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Diego Timana/Downloads/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Diego Timana/Downloads/core-2.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Diego Timana/Downloads/ecj-4.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Diego Timana/Downloads/icu4j-57.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Diego Timana/Downloads/itext-2.1.7.js5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Diego Timana/Downloads/jackson-annotations-2.1.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Diego Timana/Downloads/jackson-core-2.1.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Diego Timana/Downloads/jackson-databind-2.1.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Diego Timana/Downloads/jakarta-regexp-1.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Diego Timana/Downloads/jasperreports-6.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Diego Timana/Downloads/javax.inject-1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Diego Timana/Downloads/jcommon-1.0.23.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Diego Timana/Downloads/jfreechart-1.0.19.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Diego Timana/Downloads/lucene-analyzers-common-4.5.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Diego Timana/Downloads/lucene-core-4.5.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Diego Timana/Downloads/lucene-queries-4.5.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Diego Timana/Downloads/lucene-queryparser-4.5.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Diego Timana/Downloads/lucene-sandbox-4.5.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Diego Timana/Downloads/olap4j-0.9.7.309-JS-3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Diego Timana/Downloads/spring-aop-3.0.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Diego Timana/Downloads/spring-asm-3.0.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Diego Timana/Downloads/spring-beans-3.0.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Diego Timana/Downloads/spring-context-3.0.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Diego Timana/Downloads/spring-core-3.0.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Diego Timana/Downloads/spring-expression-3.0.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Diego Timana/Downloads/stax-1.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Diego Timana/Downloads/stax-api-1.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Diego Timana/Downloads/stax-api-1.0-2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Diego Timana/Downloads/poi-5.0.0/poi-5.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Diego Timana/Downloads/poi-5.0.0/poi-ooxml-5.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Diego Timana/Downloads/poi-5.0.0/poi-ooxml-full-5.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Diego Timana/Downloads/poi-5.0.0/lib/commons-collections4-4.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Diego Timana/Downloads/poi-5.0.0/ooxml-lib/xmlbeans-4.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Diego Timana/Downloads/commons-beanutils-1.9.4/commons-beanutils-1.9.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Diego Timana/Downloads/commons-beanutils-1.9.4/commons-beanutils-1.9.4-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Diego Timana/Downloads/commons-beanutils-1.9.4/commons-beanutils-1.9.4-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Diego Timana/Downloads/commons-beanutils-1.9.4/commons-beanutils-1.9.4-tests.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Diego Timana/Downloads/commons-beanutils-1.9.4/commons-beanutils-1.9.4-test-sources.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

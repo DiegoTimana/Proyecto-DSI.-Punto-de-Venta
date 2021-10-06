@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Factura" pageWidth="1200" pageHeight="842" columnWidth="1160" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="072276e4-cdc9-43f5-aa51-f43c4b83ebe6">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w1" value="479"/>
+	<property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w2" value="521"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="FuenteDatos"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<queryString language="SQL">
+		<![CDATA[ WITH factura as (select p.id_paquete, v.id_venta, p.valor_declarado, p.direccion_origen, p.direccion_entrega, p.codigo_postal, 
+ p.peso, p.contenido, p.valor_envio, p.seguro, p.impuestos, p.total_envio, p.sede, 
+ v.total_impuestos, v.total_seguro, v.total_envios, v.vendedor,	v.fecha_venta, v.total_venta, v.cliente as cliente_id from paquetes as p join ventas as v
+ on p.venta = v.id_venta)
+ SELECT * from factura 
+ where cliente_id = 112233 and id_venta=20]]>
+	</queryString>
+	<field name="id_paquete" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id_paquete"/>
+		<property name="com.jaspersoft.studio.field.label" value="id_paquete"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="paquetes"/>
+	</field>
+	<field name="id_venta" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id_venta"/>
+		<property name="com.jaspersoft.studio.field.label" value="id_venta"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ventas"/>
+	</field>
+	<field name="valor_declarado" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="valor_declarado"/>
+		<property name="com.jaspersoft.studio.field.label" value="valor_declarado"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="paquetes"/>
+	</field>
+	<field name="direccion_origen" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="direccion_origen"/>
+		<property name="com.jaspersoft.studio.field.label" value="direccion_origen"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="paquetes"/>
+	</field>
+	<field name="direccion_entrega" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="direccion_entrega"/>
+		<property name="com.jaspersoft.studio.field.label" value="direccion_entrega"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="paquetes"/>
+	</field>
+	<field name="codigo_postal" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="codigo_postal"/>
+		<property name="com.jaspersoft.studio.field.label" value="codigo_postal"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="paquetes"/>
+	</field>
+	<field name="peso" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="peso"/>
+		<property name="com.jaspersoft.studio.field.label" value="peso"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="paquetes"/>
+	</field>
+	<field name="contenido" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="contenido"/>
+		<property name="com.jaspersoft.studio.field.label" value="contenido"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="paquetes"/>
+	</field>
+	<field name="valor_envio" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="valor_envio"/>
+		<property name="com.jaspersoft.studio.field.label" value="valor_envio"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="paquetes"/>
+	</field>
+	<field name="seguro" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="seguro"/>
+		<property name="com.jaspersoft.studio.field.label" value="seguro"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="paquetes"/>
+	</field>
+	<field name="impuestos" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="impuestos"/>
+		<property name="com.jaspersoft.studio.field.label" value="impuestos"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="paquetes"/>
+	</field>
+	<field name="total_envio" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="total_envio"/>
+		<property name="com.jaspersoft.studio.field.label" value="total_envio"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="paquetes"/>
+	</field>
+	<field name="sede" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="sede"/>
+		<property name="com.jaspersoft.studio.field.label" value="sede"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="paquetes"/>
+	</field>
+	<field name="total_impuestos" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="total_impuestos"/>
+		<property name="com.jaspersoft.studio.field.label" value="total_impuestos"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ventas"/>
+	</field>
+	<field name="total_seguro" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="total_seguro"/>
+		<property name="com.jaspersoft.studio.field.label" value="total_seguro"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ventas"/>
+	</field>
+	<field name="total_envios" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="total_envios"/>
+		<property name="com.jaspersoft.studio.field.label" value="total_envios"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ventas"/>
+	</field>
+	<field name="vendedor" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="vendedor"/>
+		<property name="com.jaspersoft.studio.field.label" value="vendedor"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ventas"/>
+	</field>
+	<field name="fecha_venta" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="fecha_venta"/>
+		<property name="com.jaspersoft.studio.field.label" value="fecha_venta"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ventas"/>
+	</field>
+	<field name="total_venta" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="total_venta"/>
+		<property name="com.jaspersoft.studio.field.label" value="total_venta"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ventas"/>
+	</field>
+	<field name="cliente_id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="cliente_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="cliente_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ventas"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="82" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="198" height="30" uuid="66544c39-997d-43b3-bc55-639f474ad416"/>
+				<textElement>
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FACTURA DE VENTA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="30" width="198" height="50" uuid="03d8b552-933e-490f-a5d3-b505265b037d"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Delivery Management System
+demas@gmail.com
+Cali-Valle del Cauca]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="48" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<textField>
+				<reportElement x="60" y="10" width="72" height="18" uuid="d4404ba8-37fb-457b-aac6-08f152dfed0a"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cliente_id}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="-2" y="10" width="62" height="18" uuid="1f7b4e5a-dad4-485a-8333-f9af32b9f787"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Id Cliente:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="-2" y="29" width="134" height="19" uuid="f32a32f3-2fc6-49a1-8691-68bd1e2fccfe"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fecha_venta}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="981" y="10" width="79" height="18" uuid="bbc47f51-d5a7-4a98-9a07-0840c2ce1d0e"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Id Vendedor:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="981" y="29" width="79" height="19" uuid="c0a85d9e-271b-4ee2-9f6f-c89fcb7a0939"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Id Sede:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="1060" y="10" width="100" height="18" uuid="ff9c963a-73b6-473a-bd28-43d22f6b240a"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{vendedor}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1060" y="28" width="100" height="19" uuid="1d2e930f-2281-4af6-a30b-4f03b13e6253"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sede}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="71" splitType="Stretch">
+			<staticText>
+				<reportElement x="471" y="10" width="219" height="30" uuid="9140859f-47b5-465c-9103-ce2d51b0622e"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DETALLES DE LOS PAQUETES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="51" width="60" height="19" uuid="a1e55b81-6747-4dd0-b10b-ccd7880012fa"/>
+				<textElement>
+					<font isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Id Paquete]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="69" y="51" width="91" height="19" uuid="dcb24df5-0e5a-47d5-9670-30af61417399"/>
+				<textElement>
+					<font isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Dirección Origen]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="170" y="51" width="91" height="19" uuid="f87a3fe8-946b-4bbd-b1b9-b90de7dfc395"/>
+				<textElement>
+					<font isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Dirección Entrega]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="270" y="51" width="59" height="19" uuid="19a20a20-cf3d-402a-b4f9-69d76ff6782b"/>
+				<textElement>
+					<font isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Cod Postal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="340" y="51" width="59" height="19" uuid="1b9ef668-9ba3-4021-8588-22aed097f749"/>
+				<textElement>
+					<font isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Contenido]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="410" y="51" width="59" height="19" uuid="9e672ca5-ee63-4c96-a9d9-a61cbbbe8d30"/>
+				<textElement>
+					<font isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Peso]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="470" y="51" width="91" height="19" uuid="2af3956b-e5fc-49ca-9b4a-ce9b67d6f7cd"/>
+				<textElement>
+					<font isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Valor declarado]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="560" y="51" width="60" height="19" uuid="d3331d9a-daac-4dd1-bbc2-6e5977f83a2f"/>
+				<textElement>
+					<font isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Valor envío]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="630" y="50" width="59" height="19" uuid="8931ca83-151a-4df5-8975-fc13e2a4b8fe"/>
+				<textElement>
+					<font isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Seguro]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="690" y="51" width="91" height="19" uuid="70b98f71-283d-4a9c-8cf0-0c9849415109"/>
+				<textElement>
+					<font isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Impuesto]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="770" y="51" width="59" height="19" uuid="785aa6d9-ebff-4565-b3e6-b92518bbd38d"/>
+				<textElement>
+					<font isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Total Envío]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="840" y="50" width="60" height="19" uuid="eb0b09ab-f2af-47ae-ac22-20ab0a417d58"/>
+				<textElement>
+					<font isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Total envíos]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="909" y="50" width="91" height="19" uuid="8918415b-a780-4077-8fc8-ccac62ce2e45"/>
+				<textElement>
+					<font isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Total Seguros]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1010" y="50" width="91" height="19" uuid="9ea7d30e-2733-4644-9714-0382b308bf5d"/>
+				<textElement>
+					<font isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Total Impuestos]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1110" y="50" width="71" height="19" uuid="70466c98-3f49-4328-933d-7921252bdce5"/>
+				<textElement>
+					<font size="10" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Total Venta]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="37" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="7" width="60" height="30" uuid="b9fc1040-8299-452c-bf6e-23a517f2c0dc"/>
+				<textFieldExpression><![CDATA[$F{id_paquete}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="69" y="7" width="91" height="30" uuid="6d333025-8093-441e-aee2-8c673f83f9ab"/>
+				<textFieldExpression><![CDATA[$F{direccion_origen}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="168" y="7" width="92" height="30" uuid="f0438569-c73a-43c1-98cb-572e65167ab8"/>
+				<textFieldExpression><![CDATA[$F{direccion_entrega}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="270" y="7" width="59" height="30" uuid="5e26669b-db9a-458c-a874-85a660cdce49"/>
+				<textFieldExpression><![CDATA[$F{codigo_postal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="340" y="7" width="59" height="30" uuid="8b6d30dc-1d9e-44b4-b650-e8d8fcf627d8"/>
+				<textFieldExpression><![CDATA[$F{contenido}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="410" y="7" width="59" height="30" uuid="ae0d5253-a26f-403e-aff4-ffd21e20d496"/>
+				<textFieldExpression><![CDATA[$F{peso}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="470" y="7" width="80" height="30" uuid="f3dd2739-2cff-4104-8af5-5e91f22bf19a"/>
+				<textFieldExpression><![CDATA[$F{valor_declarado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="7" width="60" height="30" uuid="75ab9e3a-93b4-4fe0-93c6-708d0b5fcfdc"/>
+				<textFieldExpression><![CDATA[$F{valor_envio}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="630" y="7" width="59" height="30" uuid="3386cd26-8756-4222-b8fc-95a35159c5d9"/>
+				<textFieldExpression><![CDATA[$F{seguro}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="688" y="7" width="72" height="30" uuid="ffd9a9b6-4b80-48fc-ab47-6cca8e104da6"/>
+				<textFieldExpression><![CDATA[$F{impuestos}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="770" y="7" width="59" height="30" uuid="42072d33-a0b5-4370-8193-9f0522d06ce1"/>
+				<textFieldExpression><![CDATA[$F{total_envio}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="840" y="7" width="60" height="30" uuid="1cda78a6-7bec-445f-86d1-d3e06fd58e26"/>
+				<textFieldExpression><![CDATA[$F{total_envios}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="909" y="7" width="91" height="30" uuid="d0c57043-ae4e-4936-9a93-42c4ad39d205"/>
+				<textFieldExpression><![CDATA[$F{total_seguro}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1008" y="7" width="92" height="30" uuid="384565c3-e1e4-4c59-999e-e6ea718ee17c"/>
+				<textFieldExpression><![CDATA[$F{total_impuestos}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1110" y="7" width="59" height="30" forecolor="#45ED56" uuid="79ecd88d-a426-4af8-89fb-157a1b941642"/>
+				<textFieldExpression><![CDATA[$F{total_venta}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="-2" y="5" width="1168" height="1" uuid="1f0dfeff-df2f-40ca-9c72-1a6de37abedf"/>
+			</line>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="50">
+			<textField>
+				<reportElement x="480" y="20" width="100" height="30" uuid="9490ef19-b2cd-490c-ac77-25f36261c105"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="580" y="20" width="100" height="30" uuid="fef2d42b-9149-4ccb-9339-cfa530856b55"/>
+				<textElement textAlignment="Left"/>
+				<textFieldExpression><![CDATA[" of " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>
